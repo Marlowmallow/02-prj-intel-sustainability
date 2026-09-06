@@ -35,3 +35,53 @@ header{
         margin-right: 20%;
     }
 }
+
+section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+    align-content: center;
+}
+
+.card{
+    text-align: center;
+    background-color: rgb(184, 191, 201);
+    border-radius: 10%;
+    position: relative;
+    margin-top: 15%;
+}
+
+img{
+    width: 400px;
+    height: 250px;
+    object-fit: fill;
+    border-radius: 10%;
+}
+
+.overlay{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 50%;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+    background-color: rgb(22, 42, 73);
+    opacity: 0;
+    p{
+        color: white;
+        font-size: 120%;
+        text-align: left;
+        margin: 10%;
+    }
+}
+
+.card:hover, .card:focus{
+    transform: scale(1.1);
+}
+
+.card:hover .overlay, .card:focus .overlay{
+    opacity: 90%;
+}
