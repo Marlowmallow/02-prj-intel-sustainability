@@ -38,10 +38,17 @@ header{
 
 section{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    gap: 20px;
-    align-content: center;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 10px;
+    gap: 30px;
+    margin: 0 auto;
+    max-width: 1450px;
+    height: auto;
+    scroll-snap-type: x mandatory;
+    scroll-snap-stop: always;
+    scroll-padding-right: 400px;
 }
 
 .card{
@@ -49,7 +56,22 @@ section{
     background-color: rgb(184, 191, 201);
     border-radius: 10%;
     position: relative;
-    margin-top: 15%;
+    z-index: 1;
+    transition: box-shadow 0.18s ease-in-out;
+    margin-top: 10%;
+    margin-bottom: 3%;
+    margin-left: 3%;
+    h2{
+        font-size: 2em;
+        font-weight: 800;
+    }
+    h3{
+        font-size: 1.7em;
+        text-decoration: underline;
+        text-underline-offset: 20px;
+        font-weight: 400;
+        
+    }
 }
 
 img{
@@ -70,6 +92,7 @@ img{
     border-bottom-right-radius: 10%;
     background-color: rgb(22, 42, 73);
     opacity: 0;
+    transition: opacity 0.3s ease-in-out;
     p{
         color: white;
         font-size: 120%;
@@ -80,8 +103,33 @@ img{
 
 .card:hover, .card:focus{
     transform: scale(1.1);
+    box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.3);
 }
 
 .card:hover .overlay, .card:focus .overlay{
     opacity: 90%;
 }
+
+@media(max-width: 700px){
+    section{
+        flex-direction: column;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    .card{
+        width: 80%;
+        img{
+            width: 100%;
+        }
+    }
+}
+
+@media(max-width: 1200px){
+    section{
+        max-width: 100%;
+        overflow-x: auto;
+        max-width: 900px;
+    }
+}
+

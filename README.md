@@ -5,8 +5,8 @@ Launch a Codespace to get started! Remember to Commit and Push your project chan
 
 
 Goals:
--create responsive timeline
--create interactive time cards on hover/focus
+-create responsive timeline ~~~~~done
+-create interactive time cards on hover/focus ~~~~~done
 -add images to timeline ~~~~DONE
--levelup: Apply css transforms
+-levelup: Apply css transforms ~~~~DONE
 =levelup: add scroll snap effect
