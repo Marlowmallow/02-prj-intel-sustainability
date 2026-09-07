@@ -46,9 +46,6 @@ section{
     margin: 0 auto;
     max-width: 1450px;
     height: auto;
-    scroll-snap-type: x mandatory;
-    scroll-snap-stop: always;
-    scroll-padding-right: 400px;
 }
 
 .card{
@@ -133,3 +130,12 @@ img{
     }
 }
 
+p.info{
+    text-align: center;
+    background-color: rgb(184, 191, 201);
+    border: solid rgb(184, 191, 201);
+    font-weight: 500;
+    font-size: 1.3em;
+    justify-content: end;
+    margin: 0 auto;
+}

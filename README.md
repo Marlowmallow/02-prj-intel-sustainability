@@ -9,4 +9,3 @@ Goals:
 -create interactive time cards on hover/focus ~~~~~done
 -add images to timeline ~~~~DONE
 -levelup: Apply css transforms ~~~~DONE
-=levelup: add scroll snap effect
